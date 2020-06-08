@@ -1,0 +1,40 @@
+<view class='userBox'>
+  <image src='../../images/bg0.jpg'></image>
+  <view class='userInfo'>
+    <view class='userImg'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data class='userName' type="userNickName"></open-data>
+  </view>
+</view>
+<!-- 设备信息 -->
+<view class='container'>
+  <view class='title'>设备信息</view>
+  <view class='infoBox'>
+    <view class='info'>
+      <text>版本</text>
+      <text class='infoVal'>{{iphone.model}}</text>
+    </view>
+    <view class='info'>
+      <text>版本</text>
+      <text class='infoVal'>{{iphone.system}}</text>
+    </view>
+    <view class='info'>
+      <text>地区</text>
+      <text class='infoVal'>
+      <open-data type="userProvince" lang="zh_CN"></open-data>
+      <open-data type="userCity" lang="zh_CN"></open-data>
+      </text>
+    </view>
+    <view class='info'>
+      <text>分辨率</text>
+      <text class='infoVal'>{{iphone.windowWidth}}*{{iphone.windowHeight}}</text>
+    </view>
+
+  </view>
+
+</view>
+<view class='setting' bind:tap='ontap'>
+  <text>系统设置</text>
+  <text> </text>
+</view>

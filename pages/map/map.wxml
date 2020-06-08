@@ -1,0 +1,13 @@
+<view style='width:100%;height:100%'>
+  <!-- <view class="ipt-box">
+  <image class="img" src="../../assets/icons/icon2.png"></image>
+    <input class="ipt" placeholder-class="place" placeholder="搜索地名或地址" disabled="true" bindtap="routePlanner"></input>
+  </view> -->
+  <map longitude="{{longitude}}" latitude="{{latitude}}" scale="14" style='width:100%;height:100%' show-location="true" enable-rotate="true" controls polyline polygon>
+    <cover-view class="ipt-box" bindtap="routePlanner">
+      <cover-image class="img" src="../../images/icon2.png"></cover-image>
+      <cover-view class="ipt">搜索地名或地址</cover-view>
+    </cover-view>
+  </map>
+</view>
+

@@ -1,0 +1,18 @@
+.map_container{ 
+    height: 100vh; 
+    width: 100%; 
+} 
+
+.map { 
+    height: 100%; 
+    width: 100%; 
+}
+.rgc_info{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.rgc_info .text{
+    margin-top: 20rpx;
+}

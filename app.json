@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/user/user",
+    "pages/liangdu/index",
+    "pages/find/find"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#312c54",
+    "navigationBarTitleText": "Lucky・秋酿",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f3f3f3",
+    "navigationStyle":"custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#312c54",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/weather.png",
+        "selectedIconPath": "./images/acweather.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "./images/map.png",
+        "selectedIconPath": "./images/acmap.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/acmy.png"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序获取当前城市的天气"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

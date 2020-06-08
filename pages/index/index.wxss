@@ -1,0 +1,265 @@
+/* pages/home/home.wxss */
+page{
+  
+}
+.bg-box{
+  width:100%;
+  height:100%;
+  /*   position: fixed:将相对于屏幕视口（viewport）的位置来指定其位置。并且元素的位置在屏幕滚动时不会改变。 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* background-image: url(http://pic1.win4000.com/mobile/2018-11-17/5bef82896c778.jpg); */
+  background-size: 112%;
+  background-repeat: no-repeat;
+  z-index: -999;
+}
+.me{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-size: 112%;
+  background-repeat: no-repeat;
+  z-index: -999;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 34rpx;
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+}
+/* 搜索栏的css */
+.search{
+  position: relative;
+  padding: 15rpx 0 8rpx;
+  margin: 0 50rpx;
+  border-bottom: 2rpx solid #fff;
+}
+.search .icon-img{
+  position: absolute;
+  left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.search .search-inp{
+  width: 100%;
+  padding-left: 60rpx;
+  /* 盒子模型 不撑开高度宽度 */
+  box-sizing: border-box;
+}
+.inp-pla{
+  font-size: 26rpx;
+  color: rgb(39, 35, 35)
+}
+/* 用户信息栏  */
+.uesr-info{
+  margin: 20rpx 34rpx 0;
+  /* 子元素位于容器中心 */
+  display: flex;
+  align-items: center;
+  /* 子元素位于容器中间 */
+  /* justify-content: center; */
+}
+.uesr-info .uesrAvatar{
+  /* display: inline-block; */
+  width: 55rpx;
+  height: 55rpx;
+  border-radius: 50%;
+  /* overflow: hidden：该元素的内容若超出了给定的宽度和高度属性，那么超出的部分将会被隐藏，不占位。 */
+  overflow: hidden;
+  /* vertical-align: middle; */
+}
+.uesr-info .uesrName{
+  font-size: 30rpx;
+  color: rgb(26, 24, 24);
+  margin-left: 30rpx;
+}
+/* 定位信息 */
+.location{
+  margin: 0 40rpx;
+  display: flex;
+  /* 两端对齐，项目之间的间隔都相等。 */
+  justify-content: space-between;
+  align-items: center;
+}
+.location .fl-box .location-icon{
+  width: 35rpx;
+  height: 35rpx;
+}
+.location .fl-box .location-add{
+  margin-left: 15rpx;
+  font-size: 54rpx;
+  color: rgb(0, 0, 0);
+}
+.location .fr-box{
+  font-size: 26rpx;
+  color: #666;
+}
+/* 天气信息 */
+.weatherInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weatherInfo .weather-tem{
+  position: relative;
+  height: 450rpx;
+  line-height: 450rpx;
+  font-size: 170rpx;
+  color: #333;
+}
+.weatherInfo .weaIcon{
+  position: absolute;
+  top: -20rpx;
+  right: -50rpx;
+  font-size: 50rpx;
+}
+.weatherInfo .weather-wea{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 30rpx;
+  border-radius: 10rpx;
+}
+.weatherInfo .weather-air{
+  text-shadow: 0 0 1px #807c7c;
+  margin-top: 30rpx;
+}
+/* 7天天气 */
+.weekBox{
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 30rpx;
+  white-space: nowrap;
+}
+.weekBox .weekTitle{
+  font-size: 32rpx;
+  color: #ddd;
+  text-align: center;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.3);
+}
+.weekBox .sevenWeather .weekInfo{
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+  display: inline-block;
+}
+.weekBox .sevenWeather .weekInfo>view{
+  margin-top: 10rpx;
+}
+.weekBox .sevenWeather .weekInfo .wea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weekBox .sevenWeather .weekInfo .weaIcon{
+  width: 24rpx;
+  height: 24rpx;
+  
+}
+/* 其他信息 */
+.otherInfo{
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 20rpx;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.otherInfo .infoBox{
+  width: 25%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  /* 子元素间距相同 */
+  justify-content: space-around;
+  align-items: center;
+  border-right: 1rpx solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  padding: 15rpx 0;
+  /* font-size: 20rpx; */
+}
+/* 24小时栏 */
+.hoursBox{
+  background: rgba(0, 0, 0, 0.7);
+  margin: 20rpx 0;
+}
+.hoursContent{
+  white-space: nowrap;
+  padding-top: 40rpx;
+  box-sizing: border-box;
+}
+.hoursBox .hoursTitle{
+  font-size: 28rpx;
+  color: #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.hoursInfo{
+  font-size: 30rpx;
+  color: #000;
+  width: 456rpx;
+  margin: 15rpx;
+  display: inline-block;
+}
+.hoursInfo .weaBox{
+  background: rgb(250, 249, 249);
+  padding: 10rpx 10rpx 10rpx 60rpx;
+  box-sizing: border-box;
+  border-radius: 80rpx;
+}
+.hoursInfo .weaBox view{
+  padding: 5rpx 0;
+}
+.hoursInfo .timeBox{
+  text-align: center;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+  color: #fff;
+  
+}
+/* 生活指数 */
+.lifeBox{
+  background: rgba(0, 0, 0, 0.7);
+  margin: 20rpx 0;
+}
+.lifeBox .lifeTitle{
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 0;
+}
+.lifeBox .lifeContent{
+  margin: 0 30rpx;
+}
+.lifeBox .lifeContent .liveBox{
+  padding: 30rpx 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-bottom: 1rpx solid #ddd;
+}
+.lifeBox .lifeContent image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+.lifeBox .lifeContent .liveBox .texBox{
+  display: flex;
+  flex-direction: column;
+}
+.lifeBox .lifeContent .liveBox .texBox .text-1{
+  font-size: 40rpx;
+  padding-bottom: 10rpx;
+}
+.lifeBox .lifeContent .liveBox .texBox .text-2{
+  font-size: 28rpx;
+}

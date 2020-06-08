@@ -1,0 +1,7 @@
+<!-- <text>测试页面</text> -->
+<view class='container'>
+  <view class='title'>系统设置</view>
+  <view class='slider'>
+    <slider show-value value="{{content}}" bindchanging="onbind" ></slider>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+page{
+  background-color: #efefef;
+}
+.container{
+  margin-top: 40rpx;
+}
+.container .title{
+  margin-left: 40rpx;
+  margin-top: 100rpx;
+  color: #888;
+}
+.container .slider{
+  margin-top: 15rpx;
+  background-color: #fff;
+  padding: 15rpx 0;
+}
